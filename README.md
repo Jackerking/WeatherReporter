@@ -1,0 +1,2 @@
+# WeatherReporter
+使用Android Studio工具构建一个简单的天气预报程序
