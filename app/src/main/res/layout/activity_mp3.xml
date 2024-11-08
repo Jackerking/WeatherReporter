@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityMP3" >
+
+    <!-- ConstraintLayout for better positioning of views -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ImageView for album art -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@mipmap/disc" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- TextView for displaying song details -->
+    <TextView
+        android:id="@+id/textViewYmd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Song Details"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:padding="8dp" />
+
+    <!-- SeekBar for song progress -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <!-- RatingBar for song rating -->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+
+    <!-- Horizontal LinearLayout for playback control buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Previous Button -->
+        <ImageButton
+            android:id="@+id/imageButtonPre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Previous" />
+
+        <!-- Rewind Button -->
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_rew"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Rewind" />
+
+        <!-- Play/Pause Button -->
+        <ImageButton
+            android:id="@+id/imageButtonPlayOrPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_play"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Play/Pause" />
+
+        <!-- Forward Button -->
+        <ImageButton
+            android:id="@+id/imageButtonForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_ff"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Forward" />
+
+        <!-- Next Button -->
+        <ImageButton
+            android:id="@+id/imageButtonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_media_next"
+            android:background="?attr/selectableItemBackground"
+            android:contentDescription="Next" />
+    </LinearLayout>
+
+    <!-- ListView for displaying song list -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp" />
+
+</LinearLayout>

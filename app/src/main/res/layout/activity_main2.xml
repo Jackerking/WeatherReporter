@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textViewYmd"
+        android:layout_width="215dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center|right"
+        android:text="5/24 星期日"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWendu"
+        android:layout_width="176dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center"
+        android:text="17"
+        android:textColor="#FDFDFD"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTianqi"
+        android:layout_width="162dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="192dp"
+        android:gravity="center"
+        android:text="晴天"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewFeng"
+        android:layout_width="189dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|right"
+        android:text="东北风2级"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYmd" />
+
+    <ImageView
+        android:id="@+id/imageViewTianqi"
+        android:layout_width="68dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/sunny" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="347dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="260dp"
+        android:gravity="center|left"
+        android:text="今日建议："
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewNotice"
+        android:layout_width="404dp"
+        android:layout_height="146dp"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center|top"
+        android:text="愿你有像阳光般明媚的心情"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
